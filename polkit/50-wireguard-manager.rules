@@ -1,0 +1,20 @@
+/* Optional polkit rules for WireGuard Manager
+ *
+ * Install to: /etc/polkit-1/rules.d/50-wireguard-manager.rules
+ *
+ * This allows members of the 'wheel' group to run wg-quick
+ * via pkexec WITHOUT being prompted for a password each time.
+ *
+ * To install:
+ *   sudo install -m 644 polkit/50-wireguard-manager.rules \
+ *     /etc/polkit-1/rules.d/50-wireguard-manager.rules
+ *
+ * Without this file, pkexec will still work but will prompt
+ * for your password via the KDE authentication agent.
+ */
+polkit.addRule(function(action, subject) {
+    if (action.id === "org.freedesktop.policykit.exec" &&
+        subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+    }
+});

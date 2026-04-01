@@ -1,0 +1,20 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "WireGuard Manager"
+            }
+        ],
+        "Category": "Network",
+        "Description": "Manage WireGuard VPN connections from the KDE panel",
+        "Icon": "network-vpn",
+        "Id": "org.kde.wireguardmanager",
+        "License": "GPL-2.0-or-later",
+        "Name": "WireGuard Manager",
+        "Version": "1.0.0",
+        "Website": ""
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

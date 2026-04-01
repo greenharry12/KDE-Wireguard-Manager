@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=WireGuard Config Manager
+GenericName=VPN Configuration Manager
+Comment=Import, edit and manage WireGuard VPN profiles
+Exec=wireguard-config
+Icon=network-vpn
+Categories=Network;Settings;
+Keywords=wireguard;vpn;network;tunnel;
+StartupNotify=true

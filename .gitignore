@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# WireGuard secrets — NEVER commit real keys
+*.conf.bak
+secrets/
+
+# Qt / CMake build artifacts (if C++ backend is ever added)
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.o
+*.so
